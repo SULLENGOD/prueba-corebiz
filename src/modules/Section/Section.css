@@ -1,0 +1,15 @@
+.black {
+    background-color: black;
+    height: 430px;
+}
+.white {
+    height: 430px;
+
+}
+img {
+    width: auto;
+    max-height: 100%;
+}
+.text, .text-h3 {
+    color:  white;
+}

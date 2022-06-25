@@ -1,0 +1,15 @@
+.logo {
+  filter: invert(1);
+  height: 41px;
+  width: 181px;
+}
+
+.input-group  {
+  border: none;
+  border-bottom: 2px solid black;
+
+}
+.search {
+    width: 95%;
+    border: none;
+}
