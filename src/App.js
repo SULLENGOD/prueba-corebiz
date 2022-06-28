@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./modules/Footer/Footer";
 
 import { Navbar } from "./modules/Navbar/Navbar";
 import Carrousel from "./modules/ProductCarrousel/Carrousel";
@@ -14,6 +15,9 @@ function App() {
         <Carrousel />
         <Subscription />
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

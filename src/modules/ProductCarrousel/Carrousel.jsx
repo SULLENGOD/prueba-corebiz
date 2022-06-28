@@ -13,20 +13,22 @@ const Carrousel = () => {
   }, []);
 
   return (
-    <div className="d-flex justify-content-center">
+    <div className="d-flex justify-content-center mt-5 mb-3">
       <div className="carousel-div">
-      <div>
-        <h4>Mas vendidos</h4>
-      </div>
-        <motion.div ref={carousel} className="carousel">
-          <motion.div
-            className="inner-carousel"
-            drag="x"
-            dragConstraints={{ right: 0, left: -width }}
-          >
-            <Products />
+        <div>
+          <h4>Mas vendidos</h4>
+        </div>
+        <div className="">
+          <motion.div ref={carousel} className="carousel ">
+            <motion.div
+              className="inner-carousel"
+              drag="x"
+              dragConstraints={{ right: 0, left: -width }}
+            >
+              <Products />
+            </motion.div>
           </motion.div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

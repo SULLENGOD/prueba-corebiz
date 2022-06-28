@@ -1,19 +1,19 @@
-.item{
-    min-height: 10rem;
-    min-width: 25%;
-    padding: 5px;
+.item {
+  min-height: 10rem;
+  min-width: 25%;
+  padding: 5px;
 }
 .item img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-.inner-carousel{
-    display: flex;
+.inner-carousel {
+  display: flex;
 }
 .carousel {
-    cursor: grab;
-    overflow: hidden;
+  cursor: grab;
+  overflow: hidden;
 }
 .carousel-div {
-    width: 1000px;
+  width: 1000px;
 }

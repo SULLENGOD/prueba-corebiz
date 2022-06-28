@@ -6,37 +6,42 @@ const Section = () => {
   return (
     <div
       id="carouselExampleIndicators"
-      class="carousel slide"
+      className="carousel slide"
       data-bs-ride="carousel"
     >
-      <div class="carousel-indicators">
+      <div className="carousel-indicators">
         <button
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="0"
-          class="active"
+          className="active s-button"
           aria-current="true"
           aria-label="Slide 1"
         ></button>
         <button
           type="button"
+          className=" s-button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
         <button
           type="button"
+          className=" s-button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
+      <div className="carousel-inner">
+        <div className="carousel-item active">
           <div className="row">
-            <div className="black col-6 text-center ">
-              <h5 className="text">¡Hola! ¿Que es lo que buscas?</h5>
-              <div className="text-start">
+            <div className="black col-6">
+              <div className="text-start d-flex justify-content-center align-items-center div-text">
+                <h5 className="text">¡Hola! ¿Que es lo que buscas?</h5>
+              </div>
+              <hr />
+              <div className="text-start text-center d-flex justify-content-center align-items-center">
                 <h1 className="text-h3">
                   Crear o migrar tu comercio electronico?
                 </h1>
@@ -47,11 +52,14 @@ const Section = () => {
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div className="carousel-item">
           <div className="row">
-            <div className="black col-6 text-center ">
-              <h5 className="text">¡Hola! ¿Que es lo que buscas?</h5>
-              <div className="text-start">
+            <div className="black col-6">
+              <div className="text-start d-flex justify-content-center align-items-center div-text">
+                <h5 className="text">¡Hola! ¿Que es lo que buscas?</h5>
+              </div>
+              <hr />
+              <div className="text-start text-center d-flex justify-content-center align-items-center">
                 <h1 className="text-h3">
                   Crear o migrar tu comercio electronico?
                 </h1>
@@ -62,11 +70,14 @@ const Section = () => {
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div className="carousel-item">
           <div className="row">
-            <div className="black col-6 text-center ">
-              <h5 className="text">¡Hola! ¿Que es lo que buscas?</h5>
-              <div className="text-start">
+            <div className="black col-6">
+              <div className="text-start d-flex justify-content-center align-items-center div-text">
+                <h5 className="text">¡Hola! ¿Que es lo que buscas?</h5>
+              </div>
+              <hr />
+              <div className="text-start text-center d-flex justify-content-center align-items-center">
                 <h1 className="text-h3">
                   Crear o migrar tu comercio electronico?
                 </h1>
@@ -79,22 +90,22 @@ const Section = () => {
         </div>
       </div>
       <button
-        class="carousel-control-prev"
+        className="carousel-control-prev"
         type="button"
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
       </button>
       <button
-        class="carousel-control-next"
+        className="carousel-control-next"
         type="button"
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="next"
       >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
       </button>
     </div>
   );

@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { BsSearch } from 'react-icons/bs'
-import { AiOutlineUser, AiOutlineShoppingCart } from 'react-icons/ai'
+import React from "react";
+import { BsSearch } from "react-icons/bs";
+import { AiOutlineUser, AiOutlineShoppingCart } from "react-icons/ai";
 import logo from "./img/logo.png";
 import "./Navbar.css";
 
-export const Navbar = () => {
+export const Navbar = (num) => {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href=".">
           <img src={logo} alt="logo" className="logo" />
         </a>
         <button
@@ -22,20 +22,16 @@ export const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="input-group mb-3">
+        <div className="input-group mb-3">
           <input
             type="text"
-            class="search bg-light"
+            className="search bg-light"
             placeholder="Que estas buscando?"
             aria-label="Recipient's username"
             aria-describedby="button-addon2"
           />
-          <div class="input-group-append">
-            <button
-              class="btn ms-1"
-              type="button"
-              id="button-addon2"
-            >
+          <div className="input-group-append">
+            <button className="btn btn-ligth ms-1" type="button" id="button-addon2">
               <BsSearch />
             </button>
           </div>
@@ -43,14 +39,17 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse " id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-2">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
-              <span><AiOutlineUser/></span>
+              <a className="nav-link" aria-current="page" href=".">
+                <span>
+                  <AiOutlineUser />{" "}
+                </span>
                 Mi cuenta
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-              <AiOutlineShoppingCart/>
+              <a className="nav-link" href=".">
+                <AiOutlineShoppingCart />
+                <span className="badge bg-secondary">0</span>
               </a>
             </li>
           </ul>

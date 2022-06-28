@@ -17,12 +17,12 @@ const Products = () => {
       {product.map((data) => {
         return (
           <motion.div className="item">
-            <div className="card text-center">
+            <div className="card text-center" key={data.productId}>
               <img src={data.imageUrl} alt="..." />
               <div className="card-body">
                 <p className="name-product">{data.productName}</p>
                 <p className="fw-bold"> por ${data.price}</p>
-                <button className="btn" id="comprar">
+                <button className="btn" id="comprar" >
                   Comprar
                 </button>
               </div>

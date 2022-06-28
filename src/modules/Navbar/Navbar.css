@@ -4,12 +4,11 @@
   width: 181px;
 }
 
-.input-group  {
+.input-group {
   border: none;
   border-bottom: 2px solid black;
-
 }
 .search {
-    width: 95%;
-    border: none;
+  width: 95%;
+  border: none;
 }

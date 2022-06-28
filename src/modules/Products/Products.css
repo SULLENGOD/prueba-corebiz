@@ -1,4 +1,10 @@
 #comprar {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
+}
+.card {
+  height: 400px;
+}
+.row {
+  width: 100%;
 }
