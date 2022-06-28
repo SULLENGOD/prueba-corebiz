@@ -22,11 +22,14 @@ const Subscription = () => {
   const submitSub = async (e) => {
     e.preventDefault();
     setSub({
-      email: mail,
+      email: mail, //Falta validar formato.
       name: nombre,
     });
 
     let response = await postSub(sub);
+  
+    console.log(response, sub);
+
     return response;
   };
 
